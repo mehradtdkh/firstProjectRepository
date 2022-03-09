@@ -1,0 +1,715 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link href="css/flaticon/font/flaticon.css" rel="stylesheet">
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Car Wash</title>
+</head>
+
+<body>
+
+    <navbar class="header">
+        <section class="first-nav d-flex justify-content-around">
+            <a href="#">
+                <h1 class="header-nav-title"><span>Auto</span>Wash</h1>
+            </a>
+            <section class="w-50 d-none d-lg-flex justify-content-between">
+                <section class="d-flex align-items-center">
+                    <i class="fas fa-clock header-icon"></i>
+                    <span class="d-flex flex-column header-contact">
+                        <h5>Opening Hour</h5>
+                        <p>Mon - Fri, 8:00 - 9:00</p>
+                    </span>
+                </section>
+                <section class="d-flex align-items-center">
+                    <i class="fas fa-phone header-icon"></i>
+                    <span class="d-flex flex-column header-contact">
+                        <h5>Call Us</h5>
+                        <p>+012 345 6789</p>
+                    </span>
+                </section>
+                <section class="d-flex align-items-center">
+                    <i class="fas fa-mail-bulk header-icon">-</i>
+                    <span class="d-flex flex-column header-contact">
+                        <h5>Email Us</h5>
+                        <p>info@example.com</p>
+                    </span>
+                </section>
+            </section>
+        </section>
+        <section class="navbar d-flex justify-content-around sticky-top">
+            <section class="d-flex w-100 justify-content-between d-lg-none">
+                <p class=" toggle-menu-text ml-5 text-white">Menu</p>
+                <i class="fas fa-list mr-5 mt-2 text-white" id="toggle-menu-btn"></i>
+            </section>
+
+            <nav class="nav d-none d-lg-flex" id="respons-menu">
+                <a href="#" class="nav-item nav-link nav-item-active">Home</a>
+                <a href="#" class="nav-item nav-link">About</a>
+                <a href="#" class="nav-item nav-link">Service</a>
+                <a href="#" class="nav-item nav-link">Price</a>
+                <a href="#" class="nav-item nav-link">Washing Points</a>
+                <span class="position-relative">
+                    <a class="nav-item nav-link text-white" onclick="dropMenu()" id="page-drop-btn">pages <i class="fas fa-angle-down"></i></a>
+                    <ul class="list-group d-none position-absolute" id="page-drop-menu" onmouseout="noneDrop()">
+                        <li class="list-group-item"><a href="#" class="dropdown-item-link">Blog Grid</a></li>
+                        <li class="list-group-item"><a href="#" class="dropdown-item-link">Detail Page</a></li>
+                        <li class="list-group-item"><a href="#" class="dropdown-item-link">Team Member</a></li>
+                        <li class="list-group-item"><a href="#" class="dropdown-item-link">Schedule Booking</a></li>
+                    </ul>
+                </span>
+
+                <a href="#" class="nav-item nav-link">contact</a>
+            </nav>
+            <button class="navbar-btn d-none d-lg-flex">Get Appointment</button>
+        </section>
+
+        <section class="banner">
+            <section class="slider position-relative" id="slider1">
+                <section class=" slider-container d-flex justify-content-between align-items-center position-absolute">
+                    <i class="fas fa-angle-left prev-slide-btn" onclick="goPrevSlide()"></i>
+                    <section class="slider-content d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="slider-subtitle ">WASHING & DETALING</h4>
+                        <h1 class="slider-title ">Keep Your Car Newer</h1>
+                        <p class="slider-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Vel voluptates placeat magni adipisci fuga eum.</p>
+                        <button class="slider-btn ">Explore More</button>
+                    </section>
+                    <i class="fas fa-angle-right next-slide-btn" onclick="goNextSlide()"></i>
+                </section>
+            </section>
+
+            <section class="slider position-relative" id="slider2">
+                <section class=" slider-container d-flex justify-content-between align-items-center position-absolute">
+                    <i class="fas fa-angle-left prev-slide-btn" onclick="goPrevSlide()"></i>
+                    <section class="slider-content d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="slider-subtitle ">WASHING & DETALING</h4>
+                        <h1 class="slider-title ">Quality Service For You</h1>
+                        <p class="slider-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Vel voluptates placeat magni adipisci fuga eum.</p>
+                        <button class="slider-btn ">Explore More</button>
+                    </section>
+                    <i class="fas fa-angle-right next-slide-btn" onclick="goNextSlide()"></i>
+                </section>
+            </section>
+
+            <section class="slider position-relative" id="slider3">
+                <section class=" slider-container d-flex justify-content-between align-items-center position-absolute">
+                    <i class="fas fa-angle-left prev-slide-btn" onclick="goPrevSlide()"></i>
+                    <section class="slider-content d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="slider-subtitle ">WASHING & DETALING</h4>
+                        <h1 class="slider-title ">Exterior & Interior Washing</h1>
+                        <p class="slider-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Vel voluptates placeat magni adipisci fuga eum.</p>
+                        <button class="slider-btn">Explore More</button>
+                    </section>
+                    <i class="fas fa-angle-right next-slide-btn" onclick="goNextSlide()"></i>
+                </section>
+            </section>
+        </section>
+
+    </navbar>
+
+    <main class="main">
+        <section class="about-sec d-flex align-items-center row">
+            <img src="img/about.jpg" class="about-img col-12 col-md-5" alt="aboutImg">
+            <section class="d-flex flex-column justify-content-center w-100 justify-content-md-start col-12 col-md-7 pl-3">
+                <h6 class="about-subtitle">ABOUT US</h6>
+                <h1 class="about-title">car washing and detailing</h1>
+                <p class="about-text">Lorem ipsum dolor sit amet elit. In vitae turpis. Donec in hendre dui, vel blandit massa. Ut vestibu suscipi cursus. Cras quis porta nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum </p>
+                <span class="d-flex">
+                    <i class="fas fa-check-circle about-icon"></i>
+                    <p class="ml-2">Seats Washing</p>
+                </span>
+                <span class="d-flex">
+                    <i class="fas fa-check-circle about-icon"></i>
+                    <p class="ml-2">Vacuum cleaning</p>
+                </span>
+                <span class="d-flex">
+                    <i class="fas fa-check-circle about-icon"></i>
+                    <p class="ml-2">Interior wet cleaning</p>
+                </span>
+                <span class="d-flex">
+                    <i class="fas fa-check-circle about-icon"></i>
+                    <p class="ml-2">Window wiping</p>
+                </span>
+                <button class="about-btn">Learn More</button>
+            </section>
+        </section>
+
+        <section class="services w-100 d-flex flex-column justify-content-center">
+            <h5 class="service-subtitle text-center mb-3">What We Do?</h5>
+            <h1 class="service-title text-center">Premium Washing Services</h1>
+            <section class="service-option-container d-flex row">
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-car-wash-1 service-icon"></i>
+                    <h3>Exterior Washing</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-car-wash service-icon"></i>
+                    <h3>Interior Washing</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-vacuum-cleaner service-icon"></i>
+                    <h3>Vacuum Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-seat service-icon"></i>
+                    <h3>Seats Washing</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-car-service service-icon"></i>
+                    <h3>Window Wiping</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-car-service-2 service-icon"></i>
+                    <h3>Wet Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-car-wash service-icon"></i>
+                    <h3>Oil Changing</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+                <section class="service-item col-12 col-md-6 col-lg-3">
+                    <i class="flaticon-brush-1 service-icon"></i>
+                    <h3>Brake Reparing</h3>
+                    <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                </section>
+            </section>
+        </section>
+
+        <section class="facts d-flex justify-content-around row">
+            <section class="col-12 col-sm-6 col-lg-3">
+                <span class="d-flex">
+                <i class="fa fa-map-marker-alt mr-3 facts-icon"></i>
+                <p class="fact-no">350
+                    <span class="">+</span>
+                </p>
+                </span>
+                <p class="fact-text">Service Point</p>
+            </section>
+            <section class="col-12 col-sm-6 col-lg-3">
+                <span class="d-flex">
+                <i class="fas fa-user mr-3 facts-icon"></i>
+                <p class="fact-no">25
+                    <span class="">+</span>
+                </p>
+                </span>
+                <p class="fact-text">Engineers & Workers</p>
+            </section>
+            <section class="col-12 col-sm-6 col-lg-3">
+                <span class="d-flex">
+                <i class="fas fa-users mr-3 facts-icon"></i>
+                <p class="fact-no">25
+                    <span class="">+</span>
+                </p>
+                </span>
+                <p class="fact-text">Happy Clients</p>
+            </section>
+            <section class="col-12 col-sm-6 col-lg-3">
+                <span class="d-flex">
+                <i class="fa fa-check mr-3 facts-icon"></i>
+                <p class="fact-no">25
+                    <span class="">+</span>
+                </p>
+                </span>
+                <p class="fact-text">Projects Completed</p>
+            </section>
+        </section>
+
+        <section class="plans d-flex flex-column align-items-center w-100">
+            <h5 class="plan-subtitle">WASHING PLAN</h5>
+            <h1 class="plan-title">Choose Your Plan</h1>
+            <section class="d-flex w-100 row justify-content-around mt-5">
+                <section class="plan-item col-10 col-lg-4 wow animate__animated animate__bounceInUp" data-wow-delay=".2s">
+                    <h3 class="plan-item-title">Basic Cleaning</h3>
+                    <p class="plan-price">$ <span>25</span>.99</p>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Seats Washing</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Vacuum Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Exterior Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-times-circle text-secondary"></i>
+                        <p>Interior Wet Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-times-circle text-secondary"></i>
+                        <p>Window Wiping</p>
+                    </span>
+                    <button class="plan-btn">Book Now</button>
+                </section>
+
+
+                <section class="plan-item plan-item-active col-10 col-lg-4 wow animate__animated animate__bounceInUp" data-wow-delay=".6s">
+                    <h3 class="plan-item-title">Premium Cleaning</h3>
+                    <p class="plan-price">$ <span>35</span>.99</p>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Seats Washing</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Vacuum Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Exterior Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Interior Wet Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-times-circle text-secondary"></i>
+                        <p>Window Wiping</p>
+                    </span>
+                    <button class="plan-btn">Book Now</button>
+                </section>
+
+
+                <section class="plan-item col-10 col-lg-4 wow animate__animated animate__bounceInUp" data-wow-delay=".4s">
+                    <h3 class="plan-item-title">Complex Cleaning</h3>
+                    <p class="plan-price">$ <span>49</span>.99</p>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Seats Washing</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Vacuum Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Exterior Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Interior Wet Cleaning</p>
+                    </span>
+                    <span class="plan-icon-container">
+                        <i class="far fa-check-circle plan-icon"></i>
+                        <p>Window Wiping</p>
+                    </span>
+                    <button class="plan-btn">Book Now</button>
+                </section>
+            </section>
+
+
+
+        </section>
+
+        <section class="wash-req row d-flex">
+            <section class="wash-care col-12 col-lg-7">
+                <h5 class="req-subtitle">WASHING POINT</h5>
+                <h1 class="req-title">Car Washing & Care Points</h1>
+                <section class="d-flex  justify-content-around row">
+                    <section class="req-item d-flex col-12 col-md-6">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span class="d-flex flex-column">
+                            <h4 >Car Washing Point</h4>
+                            <p>123 Street, New York, USA</p>
+                            <p><span>Call:</span>+012 345 6789</p>
+                        </span>
+                    </section>
+                    <section class="req-item d-flex col-12 col-md-6">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span class="d-flex flex-column">
+                            <h4>Car Washing Point</h4>
+                            <p>123 Street, New York, USA</p>
+                            <p><span>Call:</span>+012 345 6789</p>
+                        </span>
+                    </section>
+                    <section class="req-item d-flex col-12 col-md-6">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span class="d-flex flex-column">
+                            <h4>Car Washing Point</h4>
+                            <p>123 Street, New York, USA</p>
+                            <p><span>Call:</span>+012 345 6789</p>
+                        </span>
+                    </section>
+                    <section class="req-item d-flex col-12 col-md-6">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span class="d-flex flex-column">
+                            <h4>Car Washing Point</h4>
+                            <p>123 Street, New York, USA</p>
+                            <p><span>Call:</span>+012 345 6789</p>
+                        </span>
+                    </section>
+                </section>
+            </section>
+            <section class="req-box col-12 col-sm-12 col-lg-5">
+                <h2 class="req-form-title">Request for a car wash</h2>
+                <form action="" id="req-form">
+                    <input type="text" placeholder="Name" class="form-input" id="name-input">
+                    <input type="email" placeholder="Email" class="form-input" id="email-input">
+                    <textarea id="req-textarea" placeholder="Description" class="form-input"></textarea>
+                    <button id="req-form-btn">Send Request</button>
+                </form>
+            </section>
+        </section>
+
+        <section class="team d-flex flex-column justify-content-center align-items-center">
+            <h5 class="team-subtitle">MEET OUR TEAM</h5>
+            <h1 class="team-title">Our Engineers & Workers</h1>
+            <section class="team-item-container">
+                <section class="team-item">
+                    <section class="team-img1 t-img">
+
+                    </section>
+                    <section class="team-info d-flex flex-column align-items-center justify-content-around">
+                        <span class="team-icon">
+                           <a href="#"> <i class="fab fa-twitter"></i></a>
+                           <a href="#"> <i class="fab fa-facebook"></i></a>
+                           <a href="#"> <i class="fab fa-linkedin"></i></a>
+                           <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </span>
+                        <h5 class="worker-name">Donald John</h5>
+                        <p class="team-text">Engineer</p>
+                    </section>
+                </section>
+                <section class="team-item">
+                    <section class="team-img2 t-img">
+
+                    </section>
+                    <section class="team-info d-flex flex-column align-items-center justify-content-around">
+                        <span class="team-icon">
+                           <a href="#"> <i class="fab fa-twitter"></i></a>
+                           <a href="#"> <i class="fab fa-facebook"></i></a>
+                           <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+                           <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </span>
+                        <h5 class="worker-name">Donald John</h5>
+                        <p class="team-text">Engineer</p>
+                    </section>
+                </section>
+                <section class="team-item">
+                    <section class="team-img3 t-img">
+
+                    </section>
+                    <section class="team-info d-flex flex-column align-items-center justify-content-around">
+                        <span class="team-icon">
+                           <a href="#"> <i class="fab fa-twitter"></i></a>
+                           <a href="#"> <i class="fab fa-facebook"></i></a>
+                           <a href="#"> <i class="fab fa-linkedin"></i></a>
+                           <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </span>
+                        <h5 class="worker-name">Donald John</h5>
+                        <p class="team-text">Engineer</p>
+                    </section>
+                </section>
+                <section class="team-item">
+                    <section class="team-img4 t-img">
+
+                    </section>
+                    <section class="team-info d-flex flex-column align-items-center justify-content-around">
+                        <span class="team-icon">
+                           <a href="#"> <i class="fab fa-twitter"></i></a>
+                           <a href="#"> <i class="fab fa-facebook"></i></a>
+                           <a href="#"> <i class="fab fa-linkedin"></i></a>
+                           <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </span>
+                        <h5 class="worker-name">Donald John</h5>
+                        <p class="team-text">Engineer</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="client-opinion d-flex flex-column align-items-center w-100">
+            <h5 class="client-subtitle">TESTIMONIAL</h5>
+            <h1 class="client-title">What our clients say</h1>
+            <section class="idea-container row ">
+                <section class="idea-item d-flex col-sm-6 col-lg-4" id="idea-item1">
+                    <img src="img/testimonial-1.jpg" class="idea-img" alt="">
+                    <section class="idea-item-text">
+                        <h3>Client Name</h3>
+                        <h4>Profession</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa aliquid!</p>
+                    </section>
+                </section>
+                <section class="idea-item d-none d-sm-flex col-sm-6 col-lg-4" id="idea-item2">
+                    <img src="img/testimonial-2.jpg" class="idea-img" alt="">
+                    <section class="idea-item-text">
+                        <h3>Client Name</h3>
+                        <h4>Profession</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa aliquid!</p>
+                    </section>
+                </section>
+                <section class="idea-item d-none d-lg-flex  col-lg-4" id="idea-item3">
+                    <img src="img/testimonial-3.jpg" class="idea-img" alt="">
+                    <section class="idea-item-text">
+                        <h3>Client Name</h3>
+                        <h4>Profession</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa aliquid!</p>
+                    </section>
+                </section>
+                <section class="idea-item  d-none col-lg-4" id="idea-item4">
+                    <img src="img/testimonial-4.jpg" class="idea-img" alt="">
+                    <section class="idea-item-text">
+                        <h3>Client Name</h3>
+                        <h4>Profession</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa aliquid!</p>
+                    </section>
+                </section>
+            </section>
+            <section class="idea-circle-container d-flex">
+                <button class="idea-circle-btn" id="circle-btn-1" onclick="Cbtn1()"></button>
+                <button class="idea-circle-btn" id="circle-btn-2" onclick="Cbtn2()"></button>
+                <button class="idea-circle-btn" id="circle-btn-3" onclick="Cbtn3()"></button>
+                <button class="idea-circle-btn" id="circle-btn-4" onclick="Cbtn4()"></button>
+            </section>
+        </section>
+
+        <section class="blogs">
+            <h5 class="blogs-subtitle">OUR BLOG</h5>
+            <h2 class="blogs-title">Latest news & articles</h2>
+            <section class="blogs-container">
+                <section class="blog-item">
+                    <section class="blog-bg bbg1">
+                        <span class="blog-hover">
+                            <p>
+                                01 <br>
+                                <span>Jan</span><br> 2021
+                        </p>
+                        </span>
+                    </section>
+                    <section class="blog-info">
+                        <a href="#">
+                            <h3 class="blog-item-title">Lorem ipsum dolor sit amet</h3>
+                        </a>
+                        <p class="blog-info-text">Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc augue velit metus congue eget semper </p>
+                    </section>
+                    <section class="blog-icon-bar">
+                        <span>
+                          <i class="fas fa-user"></i>
+                          Admin
+                      </span>
+                        <span>
+                          <i class="fas fa-folder"></i>
+                          Web Design
+                      </span>
+                        <span>
+                          <i class="fas fa-comments"></i>
+                          Comments  
+                        </span>
+                    </section>
+                </section>
+
+                <section class="blog-item">
+                    <section class="blog-bg bbg2">
+                        <span class="blog-hover"> <p>
+                            01 <br>
+                            <span>Jan</span><br> 2021
+                        </p>
+                        </span>
+                    </section>
+                    <section class="blog-info">
+                        <a href="#">
+                            <h3 class="blog-item-title">Lorem ipsum dolor sit amet</h3>
+                        </a>
+                        <p class="blog-info-text">Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc augue velit metus congue eget semper </p>
+                    </section>
+                    <section class="blog-icon-bar">
+                        <span>
+                          <i class="fas fa-user"></i>
+                          Admin
+                      </span>
+                        <span>
+                          <i class="fas fa-folder"></i>
+                          Web Design
+                      </span>
+                        <span>
+                          <i class="fas fa-comments"></i>
+                          Comments  
+                        </span>
+                    </section>
+                </section>
+
+                <section class="blog-item">
+                    <section class="blog-bg bbg3">
+                        <span class="blog-hover"> <p>
+                            01 <br>
+                            <span>Jan</span><br> 2021
+                        </p>
+                        </span>
+                    </section>
+                    <section class="blog-info">
+                        <a href="#">
+                            <h3 class="blog-item-title">Lorem ipsum dolor sit amet</h3>
+                        </a>
+                        <p class="blog-info-text">Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc augue velit metus congue eget semper </p>
+                    </section>
+                    <section class="blog-icon-bar">
+                        <span>
+                          <i class="fas fa-user"></i>
+                          Admin
+                      </span>
+                        <span>
+                          <i class="fas fa-folder"></i>
+                          Web Design
+                      </span>
+                        <span>
+                          <i class="fas fa-comments"></i>
+                          Comments  
+                        </span>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <section class="footer-content">
+            <section class="contact-us footer-item">
+                <h5 class="footer-title">Get In Touch</h5>
+                <section class="footer-item-content">
+                    <span>
+                        <i class="fa fa-map-marker-alt"></i>
+                        123 Street, New York, USA
+                    </span>
+                    <span>
+                        <i class="fa fa-phone"></i>
+                        +012 345 67890
+                    </span>
+                    <span>
+                        <i class="fa fa-envelope"></i>
+                        info@example.com
+                    </span>
+                </section>
+                <section class="media-icon-bar">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </section>
+            </section>
+            <section class="footer-link-bar footer-item">
+                <h5 class="footer-title">Popular Link</h5>
+                <section class="footer-link-container d-flex flex-column">
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">About Us</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Contact Us</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Our Service</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Service Points</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Pricing Plan</a>
+                    </span>
+                </section>
+            </section>
+            <section class="useful-link footer-item">
+                <h5 class="footer-title">Useful Link</h5>
+                <section class="footer-link-container d-flex flex-column">
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Terms Of Use</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Privacy Policy</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Cookies</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">Help</a>
+                    </span>
+                    <span>
+                        <i class="fas fa-angle-right"></i>
+                        <a href="#">FQAs</a>
+                    </span>
+
+                </section>
+
+            </section>
+            <section class="newsletter footer-item">
+                <h5 class="footer-title">Newsletter</h5>
+                <form id="newsletter-form" class="d-flex flex-column">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <button id="footer-btn">submit</button>
+                </form>
+            </section>
+        </section>
+        <span class="footer-text">
+            <a href="#"> Your Site Name</a>
+            <p>All Right Reserved. Designed By </p>
+            <a href="#"> HTML Codex</a>
+        </span>
+    </footer>
+
+
+    <script src="js/script.js "></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- 
+       <section class="blog-item  d-flex flex-column">
+                    <section class="blog-bg bbg3 d-flex align-items-center justify-content-center">
+                        <section class="blog-hover">
+                            <p>
+                                01 <br>
+                                <span>JAN</span> <br> 2021
+                            </p>
+                        </section>
+                    </section>
+                    <section class="blog-info">
+                        <a href="#">
+                            <h2 class="blog-item-title">Lorem ipsum dolor sit amet</h2>
+                        </a>
+                        <p class="blog-text text-justify">Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc augue velit metus congue eget semper </p>
+                        <span class="blog-comment">
+                            <a><i class="fa fa-user"></i> Admin</a>
+                        <a><i class="fas fa-folder"></i> Web Design</a>
+                        <a><i class="fas fa-comment"></i> Comments</a>
+                        </span>
+                    </section>
+                </section>
+ -->

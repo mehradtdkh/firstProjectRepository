@@ -1,0 +1,122 @@
+    /* xs   exstra small css 576px */
+    
+    @media only screen and (max-width:575.98px) {
+        .slider-text {
+            font-size: 4vw!important;
+        }
+        .slider-subtitle {
+            font-weight: 800;
+            font-size: 4vw;
+        }
+        .slider-title {
+            font-size: 6vw;
+            font-weight: 800;
+            text-align: center;
+        }
+        .prev-slide-btn,
+        .next-slide-btn {
+            padding: .4rem .6rem;
+        }
+        .slider-btn {
+            padding: .4rem .6rem;
+            font-size: 3vw;
+        }
+        .about-sec {
+            padding: 70px 5px;
+        }
+        .facts section {
+            /* justify-content: center; */
+            /* align-items: center; */
+            justify-self: center;
+            align-self: center;
+            margin: auto;
+            /* margin-left: 30%; */
+        }
+    }
+    /* small css  768px*/
+    
+    @media only screen and (max-width:767.98px) {
+        .about-subtitle {
+            margin-top: 20px;
+        }
+        .about-sec section {
+            text-align: center;
+        }
+        .about-sec section span,
+        .about-btn {
+            margin-left: 30%;
+        }
+        /* service items */
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .team-item-container {
+            flex-wrap: wrap;
+        }
+        .team-item {
+            margin: auto!important;
+            width: 80%!important;
+            margin-top: 40px!important;
+        }
+        .footer-item {
+            width: 80%!important;
+        }
+        .plans {
+            margin: 0;
+            padding: 0;
+            padding: 40px 10px;
+        }
+        .plans section {
+            width: 90%!important;
+            margin: 30px auto!important;
+        }
+    }
+    /* medium device less than 992px*/
+    
+    @media only screen and (max-width:991.98px) {
+        .navbar {
+            height: 3rem;
+        }
+        .req-box {
+            margin-top: 30px;
+        }
+        .req-subtitle {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .req-title {
+            text-align: center;
+        }
+        .team-item-container {
+            flex-wrap: wrap;
+        }
+        .team-item {
+            margin: 20 10px;
+            width: calc(calc(100% / 2) - 30px);
+            height: 400px;
+        }
+        .blogs-container {
+            flex-wrap: wrap;
+        }
+        .blog-item {
+            width: 80%!important;
+            margin: 40px auto!important;
+        }
+        .footer-content {
+            flex-wrap: wrap;
+        }
+        .footer-item {
+            width: 45%;
+            margin-bottom: 50px;
+        }
+        .slider-text {
+            font-size: 2vw;
+        }
+    }
+    /* larg device less than 1200 */
+    
+    @media only screen and (max-width:1199.98px) {}
